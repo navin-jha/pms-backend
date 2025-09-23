@@ -10,6 +10,7 @@ const env = {
     DB_HOST: String(process.env.DB_HOST),
     DB_USER: String(process.env.DB_USER),
     DB_PASSWORD: String(process.env.DB_PASSWORD),
+    DB_CA_CERT: String(process.env.DB_CA_CERT),
     CORS_ORIGIN: String(process.env.CORS_ORIGIN),
     ACCESS_TOKEN_SECRET: String(process.env.ACCESS_TOKEN_SECRET),
     ACCESS_TOKEN_EXPIRY: String(process.env.ACCESS_TOKEN_EXPIRY),

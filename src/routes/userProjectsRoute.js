@@ -13,8 +13,8 @@ router.use(verifyJWT)
 
 router.route('/select').get(getAllUserProjects)
 router.route('/select/:id').get(getUserProjectById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL"), createUserProject)
-router.route('/update:id').put(verifyAccess("IhXLXLamheCcY76QX0OL"), updateUserProject)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL"), deleteUserProject)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), createUserProject)
+router.route('/update:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), updateUserProject)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), deleteUserProject)
 
 export default router

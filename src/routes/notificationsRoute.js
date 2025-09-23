@@ -14,9 +14,9 @@ router.use(verifyJWT)
 
 router.route('/select').get(getAllNotifications)
 router.route('/select/:id').get(getNotificationById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL"), createNotification)
-router.route('/update/:id').put(verifyAccess("IhXLXLamheCcY76QX0OL"), updateNotification)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), createNotification)
+router.route('/update/:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), updateNotification)
 router.route('/mark-read/:id').put(markNotificationAsRead)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL"), deleteNotification)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), deleteNotification)
 
 export default router

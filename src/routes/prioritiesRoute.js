@@ -13,8 +13,8 @@ router.use(verifyJWT)
 
 router.route('/select').get(getAllpriorities)
 router.route('/select/:id').get(getPriorityById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL"), createPriority)
-router.route('/update/:id').put(verifyAccess("IhXLXLamheCcY76QX0OL"), updatePriority)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL"), deletePriority)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), createPriority)
+router.route('/update/:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), updatePriority)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), deletePriority)
 
 export default router

@@ -13,8 +13,8 @@ router.use(verifyJWT)
 
 router.route('/select').get(getAllTasks)
 router.route('/select/:id').get(getTaskById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL"), createTask)
-router.route('/update/:id').put(verifyAccess("IhXLXLamheCcY76QX0OL"), updateTask)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL"), deleteTask)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), createTask)
+router.route('/update/:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), updateTask)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), deleteTask)
 
 export default router

@@ -15,8 +15,8 @@ router.use(verifyJWT)
 router.route('/select').get(getAllReports)
 router.route('/aggregate').get(getAggregatedReport)
 router.route('/select/:id').get(getReportById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL", "pbTeX6vDMxZlVCyZPCUw", "b2k-wwZKe4pFIfbsa-4X"), createReport)
-router.route('/update/:id').put(verifyAccess("IhXLXLamheCcY76QX0OL", "pbTeX6vDMxZlVCyZPCUw", "b2k-wwZKe4pFIfbsa-4X"), updateReport)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL", "pbTeX6vDMxZlVCyZPCUw", "b2k-wwZKe4pFIfbsa-4X"), deleteReport)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K", "qp0v2-tXPyUsDfHLT6pp", "U3TrDdZ2xyGJGjE8P9dT"), createReport)
+router.route('/update/:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K", "qp0v2-tXPyUsDfHLT6pp", "U3TrDdZ2xyGJGjE8P9dT"), updateReport)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K", "qp0v2-tXPyUsDfHLT6pp", "U3TrDdZ2xyGJGjE8P9dT"), deleteReport)
 
 export default router

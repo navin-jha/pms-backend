@@ -13,8 +13,8 @@ router.use(verifyJWT)
 
 router.route('/select').get(getAllRoles)
 router.route('/select/:id').get(getRoleById)
-router.route('/create').post(verifyAccess("IhXLXLamheCcY76QX0OL"), createRole)
-router.route('/update/:id').put(verifyAccess("IhXLXLamheCcY76QX0OL"), updateRole)
-router.route('/delete/:id').delete(verifyAccess("IhXLXLamheCcY76QX0OL"), deleteRole)
+router.route('/create').post(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), createRole)
+router.route('/update/:id').put(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), updateRole)
+router.route('/delete/:id').delete(verifyAccess("8NZu4ZLDS7e0xqfRvI3K"), deleteRole)
 
 export default router
