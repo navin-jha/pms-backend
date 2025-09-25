@@ -14,7 +14,7 @@ const getAllMeetingMinutes = async () => {
 const getMeetingMinutesById = async (id) => {
     try {
         const [result] = await connection.promise().query(
-            `SELECT * FROM meeting_minutes WHERE id = ?`, 
+            `SELECT * FROM meeting_minutes WHERE id = ?`,
             [id]
         )
         return result.length ? result[0] : null
@@ -30,7 +30,7 @@ const createMeetingMinutes = async (id, project_id, date, attendees, notes, crea
             [id, project_id, date, attendees, notes, created_by]
         )
         return {
-            id, 
+            id,
             project_id,
             date,
             attendees,
@@ -49,12 +49,12 @@ const updateMeetingMinutes = async (id, project_id, date, attendees, notes) => {
             [project_id, date, attendees, notes, id]
         )
         if (result.affectedRows === 0) return null
-        return { 
-            id, 
-            project_id, 
-            date, 
-            attendees, 
-            notes 
+        return {
+            id,
+            project_id,
+            date,
+            attendees,
+            notes
         }
     } catch (error) {
         throw new Error(`Failed to update meeting minutes`)
@@ -64,11 +64,11 @@ const updateMeetingMinutes = async (id, project_id, date, attendees, notes) => {
 const deleteMeetingMinutes = async (id) => {
     try {
         const [result] = await connection.promise().query(
-            `DELETE FROM meeting_minutes WHERE id = ?`, 
+            `DELETE FROM meeting_minutes WHERE id = ?`,
             [id]
         )
         if (result.affectedRows === 0) return null
-        return { 
+        return {
             id,
             message: `Meeting minutes deleted successfully`
         }
